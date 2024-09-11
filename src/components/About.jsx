@@ -85,7 +85,7 @@ const About = () => {
 
       {/* EVENT CARDS COMPONENT */}
 
-      <div className="w-auto py-12 bg-gray-100 px-16 rounded-md">
+      <div className="w-full py-12 bg-gray-100 px-16 rounded-md">
       <h1 className="text-4xl font-bold text-center mt-8 mb-10 text-blue-950 bg-gray-200 rounded-lg p-4">Our Charity Works</h1>
       <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-3">
         {events.map(event => (

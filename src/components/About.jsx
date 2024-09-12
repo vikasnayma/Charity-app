@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import aboutimg from '../assets/aboutimg.png';
 import EventCard from './EventCard';
 import animal from '../assets/animal.png';
@@ -8,6 +9,7 @@ import education from '../assets/education.png';;
 import food from '../assets/food.jpg';
 import health1 from '../assets/health1.jpg';
 import logo from '../assets/logo.jpg';
+import bg2 from '../assets/bg2.avif';
 
 const About = () => {
 
@@ -76,8 +78,8 @@ const About = () => {
         {/* Image Section */}
         <div className="flex-1 p-16 flex items-center justify-center bg-gray-100">
           <img
-            className="rounded-2xl w-full h-full object-cover"
-            src={aboutimg} // Replace with an actual charity work image
+            className="rounded-3xl w-full h-full object-cover p-4"
+            src={bg2} // Replace with an actual charity work image
             alt="Charity Work"
           />
         </div>
@@ -102,11 +104,8 @@ const About = () => {
         <div>
           <div className="flex items-center mb-4">
             <img src={logo} className="h-12 mr-3" />
-            <h2 className="text-xl text-blue-950 font-semibold">Jago welfare</h2>
+            <h2 className="text-xl text-blue-950 font-semibold">CHARITY</h2>
           </div>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
-          </p>
           <address className="mt-4 text-gray-600">
             <strong>Address:</strong> 858 Walnutwood Ave. Webster, NY 14580<br />
             <strong>Phone:</strong> +011 234-567-890<br />

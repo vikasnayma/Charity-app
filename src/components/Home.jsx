@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import bg1 from '../assets/bg1.avif';
 import bg2 from '../assets/bg2.avif';
 import EventCard from './EventCard';
@@ -9,6 +10,12 @@ import education from '../assets/education.png';;
 import food from '../assets/food.jpg';
 import health1 from '../assets/health1.jpg';
 import logo from '../assets/logo.jpg';
+import aboutimg from '../assets/aboutimg.png';
+import gallery1 from '../assets/gallery1.jpg';
+import gallery2 from '../assets/gallery2.jpg';
+import gallery3 from '../assets/gallery3.jpg';
+import gallery4 from '../assets/gallery4.jpg';
+import gallery5 from '../assets/gallery5.jpg';
 import { FaHandsHelping, FaUsers, FaDonate, FaBullhorn } from 'react-icons/fa';
 function Home() {
 
@@ -51,6 +58,47 @@ function Home() {
     },
   ];
 
+    const cards = [
+      {
+        image: gallery1,
+        title: 'Card 1',
+        description: '.............This is how we Work.............Keep Donating.............',
+      },
+      {
+        image: gallery2,
+        title: 'Card 2',
+        description: '.............This is how we Work.............Keep Donating.............',
+      },
+      {
+        image: gallery3,
+        title: 'Card 3',
+        description: '.............This is how we Work.............Keep Donating.............',
+      },
+      {
+        image: gallery4,
+        title: 'Card 4',
+        description: '.............This is how we Work.............Keep Donating.............',
+      },
+      {
+        image: gallery5,
+        title: 'Card 5',
+        description: '.............This is how we Work.............Keep Donating.............',
+      },
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + cards.length) % cards.length
+    );
+  };
+
+
   return (
 
     <>
@@ -75,9 +123,9 @@ function Home() {
       {/* Right Side - Image */}
       <div className="w-full md:w-1/2">
         <img 
-          src={bg2} 
+          src={aboutimg} 
           alt="Charity" 
-          className="w-full  h-auto rounded-3xl shadow-md m-8"
+          className="w-full  h-auto rounded-3xl ml-12"
         />
       </div>
     </section>
@@ -92,8 +140,8 @@ function Home() {
     </div>
 
 
-    <div className="bg-gray-100 py-8 px-4 md:px-20 shadow-lg rounded-lg">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+    <div className="bg-gray-100 py-8 px-4 md:px-20 rounded-lg">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center bg-white my-8 p-8 rounded-3xl shadow-lg">
         
         {/* Total Campaigns */}
         <div className="flex flex-col items-center">
@@ -126,6 +174,50 @@ function Home() {
       </div>
     </div>
 
+    {/* Gallery Section */}
+    <div className="w-auto max-w-lg mx-auto p-8 mt-4">
+    <div className="text-4xl font-bold text-center mt-8 mb-10 text-blue-950 bg-gray-100 rounded-3xl p-4">Explore Our Gallery</div>
+      <div className="relative overflow-hidden rounded-lg shadow-lg hover:scale-105 duration-300">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+         
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="min-w-full flex-shrink-0 bg-white rounded-lg"
+            >
+              <img
+                src={card.image}
+                alt={`Card ${index + 1}`}
+                className="w-full h-64 object-cover rounded-t-lg"
+              />
+              <div className="p-4">
+                <p className="text-gray-700 font-semibold">{card.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex justify-between mt-4">
+        <button
+          onClick={handlePrev}
+          className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition"
+        >
+          Prev
+        </button>
+        <button
+          onClick={handleNext}
+          className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600 transition"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+
+
     {/* FOOTER SECTION */}
 
     <footer className="bg-gray-100 pt-16 pb-8 px-5 mt-8">
@@ -134,11 +226,8 @@ function Home() {
         <div>
           <div className="flex items-center mb-4">
             <img src={logo} className="h-12 mr-3" />
-            <h2 className="text-xl text-blue-950 font-semibold">Jago welfare</h2>
+            <h2 className="text-xl text-blue-950 font-semibold">CHARITY</h2>
           </div>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
-          </p>
           <address className="mt-4 text-gray-600">
             <strong>Address:</strong> 858 Walnutwood Ave. Webster, NY 14580<br />
             <strong>Phone:</strong> +011 234-567-890<br />
@@ -190,4 +279,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

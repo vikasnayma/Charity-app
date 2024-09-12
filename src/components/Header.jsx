@@ -20,6 +20,9 @@ function Header() {
                             <NavLink to="/Projects" className={({ isActive }) => isActive ? 'active' : ''}>Projects</NavLink>
                         </li>
                         <li className='px-6 hover:text-blue-700 duration-300'>
+                            <NavLink to="/Gallery" className={({ isActive }) => isActive ? 'active' : ''}>Gallery</NavLink>
+                        </li>
+                        <li className='px-6 hover:text-blue-700 duration-300'>
                             <NavLink to="/About" className={({ isActive }) => isActive ? 'active' : ''}>About us</NavLink>
                         </li>
                         <li className='px-6 hover:text-blue-700 duration-300'>

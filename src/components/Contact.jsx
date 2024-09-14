@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.jpg';
-import contact from '../assets/contact.jpeg'
+// import contact from '../assets/contact.jpeg'
 
 function Contact() {
 
@@ -28,7 +28,7 @@ function Contact() {
       answer: 'Yes, you can subscribe to our newsletter by providing your email in the newsletter section above.',
     },
   ];
-  
+  // gfgfg
 
   return (
     <div>
@@ -37,7 +37,7 @@ function Contact() {
     {/* Contact Form Image */}
     <div className="w-full mb-8">
       <img
-        src={contact}
+        src={logo}
         alt="Contact Us Banner"
         className="w-full h-64 object-cover rounded-lg"
       />

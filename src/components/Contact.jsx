@@ -31,7 +31,7 @@ function Contact() {
   
 
   return (
-    <div>
+    <div className='bg-gray-100'>
 
     <div className="max-w-5xl mx-auto py-8 px-6 sm:px-8 lg:py-10 lg:px-10">
     {/* Contact Form Image */}

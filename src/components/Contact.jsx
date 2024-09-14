@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.jpg';
-// import contact from '../assets/contact.jpeg'
+import contact from '../assets/contact.jpg'
 
 function Contact() {
 
@@ -37,7 +37,7 @@ function Contact() {
     {/* Contact Form Image */}
     <div className="w-full mb-8">
       <img
-        src="https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=600"
+        src={contact}
         alt="Contact Us Banner"
         className="w-full h-64 object-cover rounded-lg"
       />
@@ -238,6 +238,9 @@ function Contact() {
 
 
     </div>
+
+       
+
     
   )
 }

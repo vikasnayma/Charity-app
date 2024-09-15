@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.jpg';
+<<<<<<< HEAD
 // import contact from '../assets/contact.jpeg'
+=======
+import contact from '../assets/contact.jpg'
+>>>>>>> 062bb6ad23839b2ef0451687723a4d0b5300ba27
 
 function Contact() {
 
@@ -31,7 +35,7 @@ function Contact() {
 
 
   return (
-    <div>
+    <div className='bg-gray-100'>
 
     <div className="max-w-5xl mx-auto py-8 px-6 sm:px-8 lg:py-10 lg:px-10">
     {/* Contact Form Image */}
@@ -46,7 +50,7 @@ function Contact() {
     {/* Title */}
     <div className="text-center mb-8">
       <h2 className="text-lg font-medium">Contact with us</h2>
-      <p className="text-md text-red-500 font-semibold">Get in touch with us & stay updated</p>
+      <p className="text-md text-blue-950 font-semibold">Get in touch with us & stay updated</p>
     </div>
 
     {/* Contact Info & Form */}
@@ -55,7 +59,7 @@ function Contact() {
       <div className="space-y-4">
         {/* Address */}
         <div className="flex items-center justify-center space-x-3 p-4 bg-white shadow-md rounded-lg hover:scale-105 transition-transform duration-200 hover:shadow-lg min-h-[130px] text-center">
-          <div className="text-red-500">
+          <div className="text-blue-950">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M10 2C6.686 2 4 4.686 4 8c0 5.25 6 10 6 10s6-4.75 6-10c0-3.314-2.686-6-6-6zm0 9a3 3 0 100-6 3 3 0 000 6z" />
             </svg>
@@ -68,7 +72,7 @@ function Contact() {
 
         {/* Email */}
         <div className="flex items-center justify-center space-x-3 p-4 bg-white shadow-md rounded-lg hover:scale-105 transition-transform duration-200 hover:shadow-lg min-h-[130px] text-center">
-          <div className="text-red-500">
+          <div className="text-blue-950">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12l-4-4m0 0l-4 4m4-4v12" />
             </svg>
@@ -82,7 +86,7 @@ function Contact() {
 
         {/* Phone Number */}
         <div className="flex items-center justify-center space-x-3 p-4 bg-white shadow-md rounded-lg hover:scale-105 transition-transform duration-200 hover:shadow-lg min-h-[130px] text-center">
-          <div className="text-red-500">
+          <div className="text-blue-950">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h4l3-7m10 4l-3 7H9m-6 2h10l3-7m-10 2v10" />
             </svg>
@@ -97,7 +101,7 @@ function Contact() {
 
       {/* Contact Form Section */}
       <div className="bg-white shadow-lg rounded-lg p-4">
-        <h2 className="text-lg font-semibold mb-4 text-red-500">Leave us a message</h2>
+        <h2 className="text-lg font-semibold mb-4 text-blue-950">Leave us a message</h2>
         <form>
           <div className="grid grid-cols-1 gap-4 mb-3">
             <input
@@ -122,7 +126,7 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="bg-red-500 hover:bg-red-600 text-white rounded-md py-2 px-4 transition duration-200 text-sm"
+            className="bg-blue-900 hover:bg-blue-950 text-white rounded-md py-2 px-4 transition duration-200 text-sm"
           >
             Send message
           </button>
@@ -135,7 +139,7 @@ function Contact() {
       <h2 className="text-md font-semibold">Newsletter</h2>
       <p className="text-sm text-gray-700">
         To get weekly & monthly news,{' '}
-        <span className="font-semibold text-red-500">Subscribe</span> to our newsletter.
+        <span className="font-semibold text-blue-950">Subscribe</span> to our newsletter.
       </p>
       <div className="mt-3 flex justify-center space-x-3">
         <input
@@ -143,7 +147,7 @@ function Contact() {
           placeholder="Your mail address"
           className="border border-gray-300 rounded-md p-2 w-full max-w-md text-sm"
         />
-        <button className="bg-red-500 hover:bg-red-600 text-white rounded-md py-2 px-4 transition duration-200 text-sm">
+        <button className="bg-blue-900 hover:bg-blue-950 text-white rounded-md py-2 px-4 transition duration-200 text-sm">
           Subscribe
         </button>
       </div>
@@ -151,7 +155,7 @@ function Contact() {
 
     {/* FAQ Section */}
     <div className="mt-10 mb-10">
-      <h2 className="text-lg font-semibold text-center mb-6 text-red-500">Frequently Asked Questions</h2>
+      <h2 className="text-lg font-semibold text-center mb-6 text-blue-950">Frequently Asked Questions</h2>
       {faqData.map((faq, index) => (
         <div key={index}>
           <div
@@ -239,9 +243,11 @@ function Contact() {
 
     </div>
 
+       
 
     
   )
 }
 
 export default Contact
+

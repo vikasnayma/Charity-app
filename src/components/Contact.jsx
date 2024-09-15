@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.jpg';
-<<<<<<< HEAD
-// import contact from '../assets/contact.jpeg'
-=======
 import contact from '../assets/contact.jpg'
->>>>>>> 062bb6ad23839b2ef0451687723a4d0b5300ba27
 
 function Contact() {
 
@@ -41,7 +37,7 @@ function Contact() {
     {/* Contact Form Image */}
     <div className="w-full mb-8">
       <img
-        src={logo}
+        src={contact}
         alt="Contact Us Banner"
         className="w-full h-64 object-cover rounded-lg"
       />

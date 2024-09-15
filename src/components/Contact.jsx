@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.jpg';
-import contact from '../assets/contact.jpg'
+import community from '../assets/community.jpg'
+
 
 function Contact() {
 
@@ -28,19 +29,20 @@ function Contact() {
       answer: 'Yes, you can subscribe to our newsletter by providing your email in the newsletter section above.',
     },
   ];
-
+  
 
   return (
     <div className='bg-gray-100'>
 
     <div className="max-w-5xl mx-auto py-8 px-6 sm:px-8 lg:py-10 lg:px-10">
     {/* Contact Form Image */}
-    <div className="w-full mb-8">
+    <div className="w-full mb-8 flex">
       <img
-        src={contact}
+        src={community}
         alt="Contact Us Banner"
-        className="w-full h-64 object-cover rounded-lg"
+        className="w-[1200px] h-[300px] object-cover rounded-lg"
       />
+      
     </div>
 
     {/* Title */}
@@ -62,7 +64,8 @@ function Contact() {
           </div>
           <div>
             <h3 className="text-md font-medium">Address:</h3>
-            <p className="text-sm">123 MG Road, Bengaluru, Karnataka, India</p>
+            <p className="text-sm">101 Hope Street, Charityville, NY 10012
+            </p>
           </div>
         </div>
 
@@ -89,8 +92,8 @@ function Contact() {
           </div>
           <div>
             <h3 className="text-md font-medium">Phone Number:</h3>
-            <p className="text-sm">+91 9876543210</p>
-            <p className="text-sm">+91 1234567890</p>
+            <p className="text-sm">(123) 456-7890</p>
+            <p className="text-sm">(111) 222-3333</p>
           </div>
         </div>
       </div>
@@ -185,15 +188,15 @@ function Contact() {
         <div>
           <div className="flex items-center mb-4">
             <img src={logo} className="h-12 mr-3" />
-            <h2 className="text-xl text-blue-950 font-semibold">Jago welfare</h2>
+            <h2 className="text-xl text-blue-950 font-semibold">Charity</h2>
           </div>
           <p className="text-gray-600">
             Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
           </p>
           <address className="mt-4 text-gray-600">
-            <strong>Address:</strong> 858 Walnutwood Ave. Webster, NY 14580<br />
-            <strong>Phone:</strong> +011 234-567-890<br />
-            <strong>Email:</strong> info@example.com
+            <strong>Address:</strong> 101 Hope Street, Charityville, NY 10012<br />
+            <strong>Phone:</strong> (123) 456-7890<br />
+            <strong>Email:</strong> support@domain.com
           </address>
         </div>
 
@@ -202,10 +205,10 @@ function Contact() {
           <h3 className="text-lg text-blue-950 font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-600">
             <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Services</a></li>
+            <li><a href="#" className="hover:underline">Gallery</a></li>
             <li><a href="#" className="hover:underline">Projects</a></li>
-            <li><a href="#" className="hover:underline">News</a></li>
-            <li><a href="#" className="hover:underline">Career</a></li>
+            <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#" className="hover:underline">Careers</a></li>
           </ul>
         </div>
 
@@ -226,11 +229,11 @@ function Contact() {
           <h3 className="text-lg  text-blue-950 font-semibold mb-4">Latest Tweets</h3>
           <div className="text-gray-600 space-y-4">
             <p>
-              <a href="#" className="text-blue-900 hover:underline">#digitalmarketing</a><br />
+              <a href="#" className="text-blue-900 hover:underline">#CharityForAll</a><br />
               Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
             </p>
-            <a href="#" className="text-blue-900 hover:underline">twitter.com/i/#puredrinkingwater</a>
-            <p className="text-sm text-gray-500">December 13, 2021 04:20 PM</p>
+            <a href="#" className="text-blue-900 hover:underline">https://twitter.com/helpinghandsxyz</a>
+            <p className="text-sm text-gray-500">July 18, 2024 04:20 PM</p>
           </div>
         </div>
       </div>

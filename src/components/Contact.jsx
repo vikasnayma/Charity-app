@@ -28,7 +28,7 @@ function Contact() {
       answer: 'Yes, you can subscribe to our newsletter by providing your email in the newsletter section above.',
     },
   ];
-  // gfgfg
+
 
   return (
     <div>

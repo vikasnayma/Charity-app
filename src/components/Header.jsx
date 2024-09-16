@@ -17,7 +17,7 @@ function Header() {
 
             {/* Navigation Links */}
             <div className='hidden md:flex space-x-10 text-black'>
-              <ul className='flex items-center space-x-8 text-lg font-semibold'>
+              <ul className='flex items-center space-x-8 text-md font-semibold'>
                 <li className='relative group'>
                   <NavLink 
                     to="/" 
@@ -64,7 +64,7 @@ function Header() {
 
             {/* Login Button */}
             <div className='flex items-center'>
-              <button className='border border-blue-900 rounded-full shadow-lg text-lg font-semibold text-black px-6 py-2 hover:bg-blue-800 hover:text-white transition-all duration-300 ease-in-out'>
+              <button className='border border-blue-900 rounded-lg shadow-lg text-lg text-black px-6 py-1 hover:bg-blue-950 hover:text-white transition-all duration-300 ease-in-out'>
                 Login
               </button>
             </div>

@@ -106,21 +106,21 @@ function Contact() {
             <input
               type="text"
               placeholder="Your full name"
-              className="border border-gray-300 rounded-md p-2 w-full bg-red-100 text-sm"
+              className="border border-gray-300 rounded-md p-2 w-full bg-gray-100 text-sm"
             />
             <input
               type="email"
               placeholder="Your email address"
-              className="border border-gray-300 rounded-md p-2 w-full bg-red-100 text-sm"
+              className="border border-gray-300 rounded-md p-2 w-full bg-gray-100 text-sm"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="border border-gray-300 rounded-md p-2 w-full bg-red-100 text-sm"
+              className="border border-gray-300 rounded-md p-2 w-full bg-gray-100 text-sm"
             />
             <textarea
               placeholder="Message"
-              className="border border-gray-300 rounded-md p-2 w-full h-24 bg-red-100 text-sm"
+              className="border border-gray-300 rounded-md p-2 w-full h-24 bg-gray-100 text-sm"
             />
           </div>
           <button
@@ -130,25 +130,6 @@ function Contact() {
             Send message
           </button>
         </form>
-      </div>
-    </div>
-
-    {/* Newsletter Section */}
-    <div className="mt-8 bg-white shadow-lg p-4 rounded-lg text-center">
-      <h2 className="text-md font-semibold">Newsletter</h2>
-      <p className="text-sm text-gray-700">
-        To get weekly & monthly news,{' '}
-        <span className="font-semibold text-blue-950">Subscribe</span> to our newsletter.
-      </p>
-      <div className="mt-3 flex justify-center space-x-3">
-        <input
-          type="email"
-          placeholder="Your mail address"
-          className="border border-gray-300 rounded-md p-2 w-full max-w-md text-sm"
-        />
-        <button className="bg-blue-900 hover:bg-blue-950 text-white rounded-md py-2 px-4 transition duration-200 text-sm">
-          Subscribe
-        </button>
       </div>
     </div>
 
@@ -182,7 +163,7 @@ function Contact() {
 
      {/* FOOTER SECTION */}
 
-     <footer className="bg-gray-100 pt-16 pb-8 px-5">
+     <footer className="bg-gray-100 pt-16 pb-8 px-5 pl-16">
       <div className="w-auto mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & Description */}
         <div>
@@ -190,9 +171,6 @@ function Contact() {
             <img src={logo} className="h-12 mr-3" />
             <h2 className="text-xl text-blue-950 font-semibold">Charity</h2>
           </div>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
-          </p>
           <address className="mt-4 text-gray-600">
             <strong>Address:</strong> 101 Hope Street, Charityville, NY 10012<br />
             <strong>Phone:</strong> (123) 456-7890<br />
@@ -207,8 +185,7 @@ function Contact() {
             <li><a href="#" className="hover:underline">About Us</a></li>
             <li><a href="#" className="hover:underline">Gallery</a></li>
             <li><a href="#" className="hover:underline">Projects</a></li>
-            <li><a href="#" className="hover:underline">Home</a></li>
-            <li><a href="#" className="hover:underline">Careers</a></li>
+            <li><a href="#" className="hover:underline">News</a></li>
           </ul>
         </div>
 
@@ -217,7 +194,6 @@ function Contact() {
           <h3 className="text-lg text-blue-950 font-semibold mb-4">Support</h3>
           <ul className="space-y-2 text-gray-600">
             <li><a href="#" className="hover:underline">Help & FAQ</a></li>
-            <li><a href="#" className="hover:underline">Causes</a></li>
             <li><a href="#" className="hover:underline">Events</a></li>
             <li><a href="#" className="hover:underline">Contact us</a></li>
             <li><a href="#" className="hover:underline">Terms of Service</a></li>
@@ -226,14 +202,11 @@ function Contact() {
 
         {/* Latest Tweets */}
         <div>
-          <h3 className="text-lg  text-blue-950 font-semibold mb-4">Latest Tweets</h3>
-          <div className="text-gray-600 space-y-4">
-            <p>
-              <a href="#" className="text-blue-900 hover:underline">#CharityForAll</a><br />
-              Lorem ipsum dolor sit amet consec elit sed eiusmod tempor incididunt ut labore etdolore magna aliqua.
-            </p>
-            <a href="#" className="text-blue-900 hover:underline">https://twitter.com/helpinghandsxyz</a>
-            <p className="text-sm text-gray-500">July 18, 2024 04:20 PM</p>
+          <h3 className="text-lg  text-blue-950 font-semibold mb-4">Connect with Us</h3>
+          <div className="text-gray-600">
+              <a href="#" className="text-blue-900 hover:underline">Twitter</a><br />
+            <a href="#" className="text-blue-900 hover:underline">Instagram</a><br/>
+            <a href="#" className="text-blue-900 hover:underline">Youtube</a>
           </div>
         </div>
       </div>

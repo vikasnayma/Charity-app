@@ -3,7 +3,6 @@ import CardComponent from "./CardComponent";
 import SubComponent from "./SubCard";
 import Wishlist from "./Wishlist";
 import logo from '../assets/logo.jpg';
-import contact from '../assets/contact.jpg'
 
 function Projects() {
   const [wishlist, setWishlist] = useState([]);

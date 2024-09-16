@@ -64,7 +64,7 @@ function Contact() {
           </div>
           <div>
             <h3 className="text-md font-medium">Address:</h3>
-            <p className="text-sm">101 Hope Street, Charityville, NY 10012
+            <p className="text-sm">123 , near xyz , 462003 ,Bhopal , MP
             </p>
           </div>
         </div>
@@ -172,11 +172,12 @@ function Contact() {
             <h2 className="text-xl text-blue-950 font-semibold">Charity</h2>
           </div>
           <address className="mt-4 text-gray-600">
-            <strong>Address:</strong> 101 Hope Street, Charityville, NY 10012<br />
-            <strong>Phone:</strong> (123) 456-7890<br />
-            <strong>Email:</strong> support@domain.com
+            <strong>Address:</strong> 123 , near xyz , 462003 , Bhopal<br />
+            <strong>Phone:</strong> +011 234-567-890<br />
+            <strong>Email:</strong> charity@gmail.com
           </address>
         </div>
+
 
         {/* Quick Links */}
         <div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from '../assets/logo.jpg';
-import contact from '../assets/contact.jpg'
 import { useContext, useState } from 'react';
 import { CardContext } from '../components/GalleryContext/CardContext';
 

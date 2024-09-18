@@ -19,7 +19,7 @@ const CardComponent = ({ setCurrentPage }) => {
       icon: faUtensils,
     },
     {
-      title: "Surgery & Treatment",
+      title: "Health Support",
       description: "Support medical care for those in need",
       link: "treatment-donation",
       bgColor: "bg-teal-100",
@@ -40,7 +40,7 @@ const CardComponent = ({ setCurrentPage }) => {
       icon: faBroom,
     },
     {
-      title: "Clothes",
+      title: "Clothes Donation",
       description: "Donate warm clothing for those in need",
       link: "clothes-donation",
       bgColor: "bg-pink-100",

@@ -6,6 +6,7 @@ import Contact from '../components/Contact';
 import About from '../components/About';
 import Header from '../components/Header';
 import Gallery from '../components/Gallery';
+import Dashboard from '../components/Dashboard';
 
 
 function Landing() {
@@ -19,6 +20,7 @@ function Landing() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>
     </Router>
     </>

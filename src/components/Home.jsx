@@ -16,14 +16,18 @@ import gallery2 from '../assets/gallery2.jpg';
 import gallery3 from '../assets/gallery3.jpg';
 import gallery4 from '../assets/gallery4.jpg';
 import gallery5 from '../assets/gallery5.jpg';
+import { useNavigate } from "react-router-dom"
+import SignUp from './SignUp';
 import { FaHandsHelping, FaUsers, FaDonate, FaBullhorn } from 'react-icons/fa';
 function Home() {
 
+  const navigation = useNavigate();
+  
   const events = [
     {
       id: 1,
       image: food,
-      title: 'Food Drive',
+      title: 'Food Donation',
       description: 'Help us collect and distribute food to those in need.',
     },
     {
@@ -98,6 +102,12 @@ function Home() {
     );
   };
 
+  const handleNavigation = ()=>{
+    navigation("/SignUp");
+  }
+
+
+  
 
   return (
 
@@ -115,7 +125,7 @@ function Home() {
         <p className="text-gray-600 mb-6">
         Join us in making a difference. Every donation, no matter the size, helps us provide food, education, and healthcare to underprivileged communities around the world. Together, we can build a brighter future and ensure that everyone has a chance to thrive.Your contributions help us to expand our reach and make a difference in the lives of thousands around the world.
         </p>
-        <button className=" border border-blue-900 rounded-md text-black px-5 py-2 shadow-md hover:bg-blue-950 transition duration-300 hover:text-white">
+        <button className=" border border-blue-900 rounded-md text-black px-5 py-2 shadow-md hover:bg-blue-950 transition duration-300 hover:text-white" onClick={handleNavigation}>
           Login to Donate
         </button>
       </div>

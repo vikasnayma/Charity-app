@@ -1,8 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.jpg'; 
+import { useNavigate } from "react-router-dom"
+import SignUp from './SignUp';
 
 function Header() {
+
+  const navigation = useNavigate();
+
+  const handleNavigation = ()=>{
+    navigation("/SignUp");
+  }
+
   return (
     <>
       <header>
@@ -59,12 +68,20 @@ function Header() {
                   </NavLink>
                   <div className='absolute left-0 bottom-0 w-full h-0.5 bg-blue-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></div>
                 </li>
+                <li className='relative group'>
+                  <NavLink 
+                    to="/DashBoard" 
+                    className={({ isActive }) => isActive ? 'text-blue-800' : 'text-gray-700'}>
+                    Dashboard
+                  </NavLink>
+                  <div className='absolute left-0 bottom-0 w-full h-0.5 bg-blue-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></div>
+                </li>
               </ul>
             </div>
 
             {/* Login Button */}
             <div className='flex items-center'>
-              <button className='border border-blue-900 rounded-lg shadow-lg text-lg text-black px-6 py-1 hover:bg-blue-950 hover:text-white transition-all duration-300 ease-in-out'>
+              <button className='border border-blue-900 rounded-lg shadow-lg text-lg text-black px-6 py-1 hover:bg-blue-950 hover:text-white transition-all duration-300 ease-in-out' onClick={handleNavigation}>
                 Login
               </button>
             </div>

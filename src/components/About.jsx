@@ -17,7 +17,7 @@ const About = () => {
     {
       id: 1,
       image: food,
-      title: 'Food Drive',
+      title: 'Food Donation',
       description: 'Help us collect and distribute food to those in need.',
     },
     {

@@ -52,7 +52,25 @@ function Projects() {
         price: "Rs 50", 
         description: "Sponsor a whole day's worth of meals for a person in need.",
         image: "https://cdn.givind.org/static/images/program/w450/feed-nutritious-meals-to-a-poor-rural-child.jpg" 
-      }
+      },
+       { 
+         title: "Holiday Special Meal", 
+         price: "$35", 
+         description: "Give the gift of a special meal to a person during the holiday season.",
+         image: "https://media.istockphoto.com/id/1386232634/photo/indian-food-plate.jpg?s=612x612&w=0&k=20&c=uoqq8ba0EZeKH2TYqQma-iAB9VhP9Pjgg7LAmk3xGks=" 
+       },
+       { 
+         title: "Emergency Relief Meal", 
+         price: "$15", 
+         description: "Provide an emergency meal to someone facing a sudden crisis or disaster.",
+         image: "https://www.rescue.org/sites/default/files/styles/widescreen_16x9_528px_wide/public/2022-11/20220919%20Somalia%20MTadesse%20Drought%207857.jpg?itok=BGaijnQD" 
+       },
+       { 
+         title: "Healthy Meal for a Child", 
+         price: "$10", 
+         description: "Sponsor a balanced meal for a child to ensure their proper growth and nutrition.",
+         image: "https://cdn.pixabay.com/photo/2016/04/07/16/46/kid-1319487_1280.jpg" 
+       }
     ];
     
     // Education Donation Options
@@ -201,6 +219,19 @@ function Projects() {
   };
 
   return <div>
+    <div className="container mx-auto px-4 py-8">
+       <div className="text-center mb-8">
+         <h2 className="text-3xl font-bold text-gray-800">
+           Empowering Change with Your Donations
+         </h2>
+         <p className="text-lg text-gray-600 mt-4">
+          At Charity, we believe that meaningful change begins with trust and
+           transparency. Our mission is to ensure that every donation, no matter
+           how big or small, has a direct and tangible impact on the lives of
+           those we support.We ensure that the funds you contribute are used efficiently, providing maximum benefit to those in need.
+         </p>
+       </div>
+    </div>
     <div className="my-12">
     {renderPage()}
     </div>

@@ -9,6 +9,7 @@ const CardComponent = ({ setCurrentPage }) => {
       description: "Empower young minds through education",
       link: "education-donation",
       bgColor: "bg-blue-100",
+      status: "Active",
       icon: faGraduationCap,
     },
     {
@@ -16,6 +17,7 @@ const CardComponent = ({ setCurrentPage }) => {
       description: "Help feed the hungry and bring hope",
       link: "food-donation",
       bgColor: "bg-orange-100",
+      status: "Active",
       icon: faUtensils,
     },
     {
@@ -23,12 +25,14 @@ const CardComponent = ({ setCurrentPage }) => {
       description: "Support medical care for those in need",
       link: "treatment-donation",
       bgColor: "bg-teal-100",
+      status: "Active",
       icon: faBriefcaseMedical,
     },
     {
       title: "Animal Shelter",
       description: "Provide a safe haven for furry friends",
       link: "animal-donation",
+      status: "Closed",
       bgColor: "bg-green-100",
       icon: faPaw,
     },
@@ -36,6 +40,7 @@ const CardComponent = ({ setCurrentPage }) => {
       title: "Cleanliness",
       description: "Contribute to a cleaner, healthier environment",
       link: "cleanliness-donation",
+      status: "Active",
       bgColor: "bg-yellow-100",
       icon: faBroom,
     },
@@ -44,6 +49,7 @@ const CardComponent = ({ setCurrentPage }) => {
       description: "Donate warm clothing for those in need",
       link: "clothes-donation",
       bgColor: "bg-pink-100",
+      status: "Active",
       icon: faTshirt,
     },
   ];
@@ -61,6 +67,7 @@ const CardComponent = ({ setCurrentPage }) => {
           </div>
           <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
           <p className="text-gray-500 mb-4">{card.description}</p>
+          <h3 className="text font-semibold mb-2">Status : {card.status}</h3>
           <a className="text-blue-500 font-bold" href="#" onClick={(e) => e.preventDefault()}>
             Explore
           </a>

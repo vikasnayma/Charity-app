@@ -219,7 +219,7 @@ function Projects() {
   };
 
   return <div>
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 mt-6">
        <div className="text-center mb-8">
          <h2 className="text-3xl font-bold text-gray-800">
            Empowering Change with Your Donations

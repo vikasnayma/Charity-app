@@ -55,19 +55,19 @@ function Projects() {
       },
        { 
          title: "Holiday Special Meal", 
-         price: "$35", 
+         price: "Rs 35", 
          description: "Give the gift of a special meal to a person during the holiday season.",
          image: "https://media.istockphoto.com/id/1386232634/photo/indian-food-plate.jpg?s=612x612&w=0&k=20&c=uoqq8ba0EZeKH2TYqQma-iAB9VhP9Pjgg7LAmk3xGks=" 
        },
        { 
          title: "Emergency Relief Meal", 
-         price: "$15", 
+         price: "Rs 15", 
          description: "Provide an emergency meal to someone facing a sudden crisis or disaster.",
          image: "https://www.rescue.org/sites/default/files/styles/widescreen_16x9_528px_wide/public/2022-11/20220919%20Somalia%20MTadesse%20Drought%207857.jpg?itok=BGaijnQD" 
        },
        { 
          title: "Healthy Meal for a Child", 
-         price: "$10", 
+         price: "Rs 10", 
          description: "Sponsor a balanced meal for a child to ensure their proper growth and nutrition.",
          image: "https://cdn.pixabay.com/photo/2016/04/07/16/46/kid-1319487_1280.jpg" 
        }
